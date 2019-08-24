@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SalesWebMvc.Models;
 
-
 namespace SalesWebMvc.Controllers
 {
     public class HomeController : Controller
@@ -34,7 +33,12 @@ namespace SalesWebMvc.Controllers
         {
             return View();
         }
+        //public IActionResult Departments()
+        //{
+        //    ViewData["Message"] = "Hello My Friend.";
+        //    return View(new Department());
 
+        //}
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
